@@ -1,5 +1,7 @@
+import SlideShow from "./components/SlideShow";
+
 function App() {
-  return <></>;
+  return <SlideShow />;
 }
 
 export default App;
