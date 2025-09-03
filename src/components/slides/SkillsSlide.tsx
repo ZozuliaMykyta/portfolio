@@ -1,6 +1,6 @@
 import React from "react";
 
-const SkillsSlide = () => {
+const SkillsSlide: React.FC = () => {
   return <div>SkillsSlide</div>;
 };
 
