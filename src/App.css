@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 .main-slide {
-  background: url("./assets/img/main-background.png") 0 0 / cover no-repeat;
+  background: url("/img/main-background.png") 0 0 / cover no-repeat;
 }
 .skills-slide {
-  background: url("./assets/img/skills-background.png") 0 0 / cover no-repeat;
+  background: url("/img/skills-background.png") 0 0 / cover no-repeat;
 }
 .slide-structure {
   display: flex;
