@@ -23,10 +23,22 @@ const SlideShow: React.FC = () => {
       noSwiping={true}
       noSwipingClass="swiper-no-swiping"
     >
-      <SwiperSlide className="main-slide slide-structure">
+      <SwiperSlide
+        className="slide-structure"
+        style={{
+          background:
+            "url('assets/img/main-background.png') 0 0 / cover no-repeat",
+        }}
+      >
         <MainSlide />
       </SwiperSlide>
-      <SwiperSlide className="skills-slide slide-structure">
+      <SwiperSlide
+        className="slide-structure"
+        style={{
+          background:
+            "url('assets/img/skills-background.png') 0 0 / cover no-repeat",
+        }}
+      >
         <SkillsSlide />
       </SwiperSlide>
     </Swiper>

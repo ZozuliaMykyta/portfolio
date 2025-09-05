@@ -1,11 +1,5 @@
 @import "tailwindcss";
 
-.main-slide {
-  background: url("/img/main-background.png") 0 0 / cover no-repeat;
-}
-.skills-slide {
-  background: url("/img/skills-background.png") 0 0 / cover no-repeat;
-}
 .slide-structure {
   display: flex;
   align-items: center;
@@ -14,7 +8,6 @@
   width: 100%;
 }
 
-/* Позволяет выделение текста на слайдах */
 .swiper-slide {
   user-select: text !important;
   -webkit-user-select: text !important;
@@ -22,7 +15,6 @@
   -ms-user-select: text !important;
 }
 
-/* Отключает перехват событий мыши для текстовых элементов */
 .swiper-slide p,
 .swiper-slide h1,
 .swiper-slide h2,
