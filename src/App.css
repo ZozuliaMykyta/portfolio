@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 .main-slide {
+  background: url("./assets/img/background.png") 0 0 / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
