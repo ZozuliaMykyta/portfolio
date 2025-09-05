@@ -10,14 +10,23 @@ const SlideShow: React.FC = () => {
     <Swiper
       direction="vertical"
       slidesPerView={1}
-      mousewheel={true}
+      mousewheel={{
+        forceToAxis: true,
+        sensitivity: 1,
+        releaseOnEdges: true,
+      }}
       modules={[Mousewheel]}
       style={{ width: "100vw", height: "100vh" }}
+      allowTouchMove={false}
+      simulateTouch={false}
+      touchStartPreventDefault={true}
+      noSwiping={true}
+      noSwipingClass="swiper-no-swiping"
     >
-      <SwiperSlide className="main-slide">
+      <SwiperSlide className="main-slide slide-structure">
         <MainSlide />
       </SwiperSlide>
-      <SwiperSlide className="main-slide">
+      <SwiperSlide className="skills-slide slide-structure">
         <SkillsSlide />
       </SwiperSlide>
     </Swiper>
