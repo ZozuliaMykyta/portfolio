@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 @font-face {
   font-family: "Death Star";
@@ -12,6 +13,7 @@
 @theme {
   --font-bebas: "Bebas Neue", sans-serif;
   --font-death-star: "Death Star", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
 }
 
 .slide-structure {
