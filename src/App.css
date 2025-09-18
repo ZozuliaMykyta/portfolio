@@ -1,4 +1,18 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@font-face {
+  font-family: "Death Star";
+  src: url("./assets/fonts/Death Star.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-bebas: "Bebas Neue", sans-serif;
+  --font-death-star: "Death Star", sans-serif;
+}
 
 .slide-structure {
   display: flex;
