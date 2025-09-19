@@ -70,7 +70,7 @@ body {
   user-select: text !important;
 }
 .container {
-  @apply max-w-[1638px] px-[15px] py-0 mx-auto my-0 flex justify-center items-center;
+  @apply max-w-[1638px] px-[15px] py-0 mx-auto my-0 flex justify-center items-center flex-col;
 }
 
 /* Custom text styling with shadow and stroke */
@@ -85,7 +85,7 @@ body {
 .bar {
   width: 100%;
   max-width: 617px;
-  height: 5px;
+  height: 16px;
   border: 1px solid var(--color-custom-pink);
   stroke-width: 1px;
   stroke: #ceb7ff;
