@@ -11,9 +11,35 @@
 }
 
 @theme {
+  /* fonts */
   --font-bebas: "Bebas Neue", sans-serif;
   --font-death-star: "Death Star", sans-serif;
   --font-montserrat: "Montserrat", sans-serif;
+  /* colors */
+  --color-custom-purple: #b377ff;
+  --color-custom-pink: #ceb7ff;
+}
+
+/* Base styles for html and body */
+html {
+  height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#root {
+  height: 100%;
 }
 
 .slide-structure {
@@ -42,4 +68,14 @@
 .swiper-slide div {
   pointer-events: auto;
   user-select: text !important;
+}
+
+/* Custom text styling with shadow and stroke */
+.text-with-stroke {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--color-custom-pink);
+}
+.purple-shadow {
+  filter: drop-shadow(2px 2px 2px var(--color-custom-purple))
+    drop-shadow(0 0 5px var(--color-custom-purple));
 }
