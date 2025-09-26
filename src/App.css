@@ -1,7 +1,6 @@
-@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
+@import "tailwindcss";
 @font-face {
   font-family: "Death Star";
   src: url("./assets/fonts/Death Star.otf") format("opentype");
@@ -44,8 +43,9 @@ body {
 
 .slide-structure {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   height: 100vh;
   width: 100%;
 }
@@ -84,7 +84,7 @@ body {
 }
 .bar {
   width: 100%;
-  max-width: 617px;
+  max-width: 515px;
   height: 16px;
   border: 1px solid var(--color-custom-pink);
   stroke-width: 1px;
