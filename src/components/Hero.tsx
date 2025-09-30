@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
         </motion.div>
 
         <motion.h1
-          className="text-[48px] font-death-star text-with-stroke text-transparent purple-shadow"
+          className="text-[48px] font-death-star pink-stroke text-transparent purple-shadow"
           variants={titleVariants}
           whileHover={{
             scale: 1.05,
@@ -100,7 +100,7 @@ const Hero: React.FC = () => {
       </motion.div>
 
       <motion.h2
-        className="text-[48px] font-death-star text-with-stroke text-transparent purple-shadow"
+        className="text-[48px] font-death-star pink-stroke text-transparent purple-shadow"
         variants={titleVariants}
         whileHover={{
           scale: 1.05,
