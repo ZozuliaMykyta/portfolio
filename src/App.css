@@ -74,9 +74,13 @@ body {
 }
 
 /* Custom text styling with shadow and stroke */
-.text-with-stroke {
+.pink-stroke {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--color-custom-pink);
+}
+.white-stroke {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
 }
 .purple-shadow {
   filter: drop-shadow(0px 0px 2px var(--color-custom-purple))
