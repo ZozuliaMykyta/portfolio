@@ -3,6 +3,7 @@ import "./App.css";
 import EnterIndicator from "./components/EnterIndicator";
 import ScrollIndicator from "./components/ScrollIndicator";
 import ContactButton from "./components/contact/ContactButton";
+import ClickToOpenButton from "./components/ClickToOpenButton";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <EnterIndicator />
       <ScrollIndicator />
       <ContactButton />
+      <ClickToOpenButton />
     </div>
   );
 }
