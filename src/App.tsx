@@ -15,7 +15,7 @@ function App() {
       <ContactButton />
       <ClickToOpenButton />
       <img
-        className="absolute bottom-[-100%] left-[50%] -translate-x-[50%] z-30"
+        className="absolute bottom-[-95%] left-[50%] -translate-x-[50%] z-30 pointer-events-none w-[80%]"
         src={earth}
         alt="Earth"
       />

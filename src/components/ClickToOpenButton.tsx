@@ -8,7 +8,7 @@ const ClickToOpenButton: React.FC = () => {
   return (
     <motion.div
       className={`absolute left-[50%] -translate-x-[50%] ${
-        opened ? "bottom-[100px]" : "bottom-[180px]"
+        opened ? "bottom-[100px]" : "bottom-[150px]"
       } z-50 cursor-pointer`}
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
