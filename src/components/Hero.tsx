@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
       animate="visible"
     >
       <motion.div
-        className="mb-14 flex flex-col justify-center"
+        className="mb-11 flex flex-col justify-center"
         variants={itemVariants}
       >
         <motion.div
