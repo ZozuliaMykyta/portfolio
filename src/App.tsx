@@ -9,14 +9,14 @@ import { motion } from "motion/react";
 
 function App() {
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <SlideShow />
       <EnterIndicator />
       <ScrollIndicator />
       <ContactButton />
       <ClickToOpenButton />
       <motion.img
-        className="absolute bottom-[-93%] left-[50%] -translate-x-[50%] z-30 pointer-events-none w-[80%]"
+        className="absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[66%] z-30 pointer-events-none w-[1100px] h-[1100px]"
         src={earth}
         alt="Earth"
         animate={{ rotate: 360 }}
