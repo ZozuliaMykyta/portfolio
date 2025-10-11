@@ -1,12 +1,30 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, EffectFade } from "swiper/modules";
+import { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import MainSlide from "./slides/MainSlide";
 import SkillsSlide from "./slides/SkillsSlide";
 
 const SlideShow: React.FC = () => {
+  const swiperRef = useRef<SwiperType | null>(null);
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Enter" && swiperRef.current) {
+        event.preventDefault();
+        swiperRef.current.slideNext();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
   return (
     <Swiper
       direction="vertical"
@@ -24,6 +42,9 @@ const SlideShow: React.FC = () => {
       effect={"fade"}
       noSwiping={true}
       noSwipingClass="swiper-no-swiping"
+      onSwiper={(swiper) => {
+        swiperRef.current = swiper;
+      }}
     >
       <SwiperSlide
         className="slide-structure"
