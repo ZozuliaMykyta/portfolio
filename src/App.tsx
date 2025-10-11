@@ -31,17 +31,19 @@ function App() {
       <ScrollIndicator />
       <ContactButton />
       <ClickToOpenButton />
-      <motion.img
-        className="absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[66%] z-30 pointer-events-none w-[1100px] h-[1100px]"
-        src={earth}
-        alt="Earth"
-        animate={{ rotate: 360 }}
-        transition={{
-          duration: 100,
-          repeat: Infinity,
-          ease: "linear",
-        }}
-      />
+      {isWide && (
+        <motion.img
+          className="absolute bottom-0 left-[50%] -translate-x-[50%] translate-y-[66%] z-30 pointer-events-none w-[1100px] h-[1100px]"
+          src={earth}
+          alt="Earth"
+          animate={{ rotate: 360 }}
+          transition={{
+            duration: 100,
+            repeat: Infinity,
+            ease: "linear",
+          }}
+        />
+      )}
     </div>
   );
 }
