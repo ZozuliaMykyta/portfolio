@@ -75,16 +75,30 @@ body {
 
 /* Custom text styling with shadow and stroke */
 .pink-stroke {
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--color-custom-pink);
 }
+
+/* Responsive stroke for larger screens */
+@media (min-width: 720px) {
+  .pink-stroke {
+    -webkit-text-stroke-width: 2px;
+  }
+}
+
 .white-stroke {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
 }
 .purple-shadow {
-  filter: drop-shadow(0px 0px 2px var(--color-custom-purple))
-    drop-shadow(0 0 2px var(--color-custom-purple));
+  filter: drop-shadow(0px 0px 1px var(--color-custom-purple))
+    drop-shadow(0 0 1px var(--color-custom-purple));
+}
+@media (min-width: 720px) {
+  .purple-shadow {
+    filter: drop-shadow(0px 0px 2px var(--color-custom-purple))
+      drop-shadow(0 0 2px var(--color-custom-purple));
+  }
 }
 .bar {
   width: 100%;
