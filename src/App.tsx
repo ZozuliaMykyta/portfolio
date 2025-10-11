@@ -6,12 +6,28 @@ import ContactButton from "./components/contact/ContactButton";
 import ClickToOpenButton from "./components/ClickToOpenButton";
 import earth from "./assets/img/earth.png";
 import { motion } from "motion/react";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [isWide, setIsWide] = useState<boolean>(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsWide(window.innerWidth > 1024);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="relative overflow-hidden">
       <SlideShow />
-      <EnterIndicator />
+      {isWide && <EnterIndicator />}
       <ScrollIndicator />
       <ContactButton />
       <ClickToOpenButton />
