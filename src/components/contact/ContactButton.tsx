@@ -5,7 +5,7 @@ const ContactButton: React.FC = () => {
   return (
     <motion.a
       href="#!"
-      className="absolute right-15 top-10 z-50 text-white font-bebas text-[41px] uppercase cursor-pointer select-none"
+      className="absolute right-4 top-4 sm:right-8 sm:top-6 lg:right-15 lg:top-10 z-50 text-white font-bebas text-2xl sm:text-3xl lg:text-[41px] uppercase cursor-pointer select-none"
       initial={{ opacity: 0, y: -20 }}
       animate={{
         opacity: 1,
@@ -29,7 +29,6 @@ const ContactButton: React.FC = () => {
       }}
     >
       contact me
-      {/* Простая линия под текстом */}
       <motion.div
         className="absolute bottom-0 left-0 h-[1px] bg-white/60 pointer-events-none"
         initial={{ width: 0 }}
