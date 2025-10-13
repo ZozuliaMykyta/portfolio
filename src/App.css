@@ -111,6 +111,6 @@ body {
   height: 16px;
   border: 1px solid var(--color-custom-pink);
   stroke-width: 1px;
-  stroke: #ceb7ff;
-  filter: drop-shadow(0 0 4px #ceb7ff);
+  stroke: var(--color-custom-pink);
+  filter: drop-shadow(0 0 4px var(--color-custom-pink));
 }
