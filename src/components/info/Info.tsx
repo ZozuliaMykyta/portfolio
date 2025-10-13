@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Arrow from "../assets/img/arrow.svg";
+import Arrow from "../../assets/img/arrow.svg";
 import { motion } from "motion/react";
 
 const Info: React.FC = () => {
