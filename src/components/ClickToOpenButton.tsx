@@ -29,7 +29,7 @@ const ClickToOpenButton: React.FC = () => {
         <motion.img
           src={Arrow}
           alt="Arrow Icon"
-          className="absolute top-[-12px] left-[-16px] sm:top-[-16px] sm:left-[-20px] md:top-[-24px] md:left-[-28px] purple-shadow w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6"
+          className="absolute top-[-12px] left-[-16px] sm:top-[-16px] sm:left-[-20px] md:top-[-24px] md:left-[-28px] purple-shadow w-4 h-4 sm:w-6 sm:h-6 md:w-9 md:h-9"
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
@@ -90,7 +90,7 @@ const ClickToOpenButton: React.FC = () => {
         <motion.img
           src={Arrow}
           alt="Arrow Icon"
-          className="absolute bottom-[-16px] right-[-20px] sm:bottom-[-20px] sm:right-[-24px] md:bottom-[-32px] md:right-[-34px] purple-shadow rotate-180 w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6"
+          className="absolute bottom-[-16px] right-[-20px] sm:bottom-[-20px] sm:right-[-24px] md:bottom-[-32px] md:right-[-34px] purple-shadow rotate-180 w-4 h-4 sm:w-6 sm:h-6 md:w-9 md:h-9"
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
