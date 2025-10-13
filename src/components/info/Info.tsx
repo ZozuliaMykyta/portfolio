@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Arrow from "../assets/img/arrow.svg";
 import { motion } from "motion/react";
 
-const ClickToOpenButton: React.FC = () => {
+const Info: React.FC = () => {
   const [opened, setOpened] = useState<boolean>(false);
 
   return (
@@ -118,4 +118,4 @@ const ClickToOpenButton: React.FC = () => {
   );
 };
 
-export default ClickToOpenButton;
+export default Info;

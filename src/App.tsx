@@ -3,7 +3,7 @@ import "./App.css";
 import EnterIndicator from "./components/EnterIndicator";
 import ScrollIndicator from "./components/ScrollIndicator";
 import ContactButton from "./components/contact/ContactButton";
-import ClickToOpenButton from "./components/info/ClickToOpenButton";
+import ClickToOpenButton from "./components/info/Info";
 import earth from "./assets/img/earth.png";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
