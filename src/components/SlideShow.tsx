@@ -6,8 +6,13 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import MainSlide from "./slides/MainSlide";
 import SkillsSlide from "./slides/SkillsSlide";
+import Earth from "./Earth";
 
-const SlideShow: React.FC = () => {
+type IIsWide = {
+  isWide: boolean;
+};
+
+const SlideShow: React.FC<IIsWide> = ({ isWide }) => {
   const swiperRef = useRef<SwiperType | null>(null);
 
   useEffect(() => {
@@ -54,6 +59,7 @@ const SlideShow: React.FC = () => {
         }}
       >
         <MainSlide />
+        {isWide && <Earth />}
       </SwiperSlide>
       <SwiperSlide
         className="slide-structure"
@@ -63,6 +69,7 @@ const SlideShow: React.FC = () => {
         }}
       >
         <SkillsSlide />
+        {isWide && <Earth />}
       </SwiperSlide>
     </Swiper>
   );
