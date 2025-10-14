@@ -1,69 +1,77 @@
-# React + TypeScript + Vite
+# 🎨 Portfolio Website (Archived)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Note**: This portfolio project has been discontinued as I'm moving on to a new concept and design approach. This repository is kept for reference and to preserve commit history.
 
-Currently, two official plugins are available:
+## 📋 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This was a React-based portfolio website built with modern web technologies. The project featured:
 
-## Expanding the ESLint configuration
+- **Interactive 3D Elements**: Earth component with smooth animations
+- **Modern Slideshow**: Skills presentation with Swiper.js integration
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+- **Smooth Animations**: Motion library for engaging user experience
+- **Contact Integration**: Interactive contact buttons and social links
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠 Tech Stack
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Frontend**: React 19.1.1 + TypeScript
+- **Styling**: Tailwind CSS 4.1.12
+- **Animations**: Motion 12.23.12
+- **Carousel**: Swiper 11.2.10
+- **Icons**: React Icons 5.5.0
+- **Build Tool**: Vite 7.1.2
+- **Linting**: ESLint with TypeScript support
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🚀 Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+If you want to explore or run this project locally:
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📁 Project Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+src/
+├── components/
+│   ├── Earth.tsx           # 3D Earth component
+│   ├── Hero.tsx            # Hero section
+│   ├── SlideShow.tsx       # Skills slideshow
+│   ├── contact/            # Contact components
+│   ├── info/              # Information sections
+│   ├── skills/            # Skills-related components
+│   ├── slides/            # Individual slide components
+│   └── social/            # Social media components
+├── assets/                # Images and fonts
+├── types/                 # TypeScript type definitions
+└── utils/                 # Utility functions
+```
+
+## 🔄 Status
+
+**Current Status**: Discontinued ❌  
+**Reason**: Moving to a new portfolio concept with different design approach  
+**Repository Status**: Archived for reference
+
+## 🚀 What's Next?
+
+I'm currently working on a new portfolio project with:
+
+- Fresh design concept
+- Enhanced user experience
+- New project showcase approach
+
+---
+
+_This project represents my learning journey and experimentation with React, TypeScript, and modern web development practices. While discontinued, it serves as a valuable reference for future projects._
