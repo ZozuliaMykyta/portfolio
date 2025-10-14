@@ -43,17 +43,9 @@ const Social: React.FC = () => {
               aria-label={label}
               variants={iconVariants}
               whileHover="hover"
-              className="relative z-10 block"
+              className="relative z-10 block text-2xl lg:text-4xl text-custom-pink cursor-pointer"
             >
-              <motion.div
-                className="text-2xl lg:text-4xl text-custom-pink cursor-pointer relative"
-                whileHover={{
-                  filter: "drop-shadow(0 0 15px rgba(236, 72, 153, 0.4))",
-                  textShadow: "0 0 10px rgba(236, 72, 153, 0.3)",
-                }}
-              >
-                <Icon />
-              </motion.div>
+              <Icon />
             </motion.a>
           </motion.div>
         ))}

@@ -6,13 +6,9 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import MainSlide from "./slides/MainSlide";
 import SkillsSlide from "./slides/SkillsSlide";
-import Earth from "./Earth";
+// import Earth from "./Earth";
 
-type IIsWide = {
-  isWide: boolean;
-};
-
-const SlideShow: React.FC<IIsWide> = ({ isWide }) => {
+const SlideShow: React.FC = () => {
   const swiperRef = useRef<SwiperType | null>(null);
 
   useEffect(() => {
@@ -42,9 +38,9 @@ const SlideShow: React.FC<IIsWide> = ({ isWide }) => {
       modules={[Mousewheel, EffectFade]}
       style={{ width: "100vw", height: "100vh" }}
       allowTouchMove={false}
-      simulateTouch={false}
+      simulateTouch={true}
       touchStartPreventDefault={true}
-      effect={"fade"}
+      // effect={"fade"}
       noSwiping={true}
       noSwipingClass="swiper-no-swiping"
       onSwiper={(swiper) => {
@@ -59,7 +55,6 @@ const SlideShow: React.FC<IIsWide> = ({ isWide }) => {
         }}
       >
         <MainSlide />
-        {isWide && <Earth />}
       </SwiperSlide>
       <SwiperSlide
         className="slide-structure"
@@ -69,7 +64,6 @@ const SlideShow: React.FC<IIsWide> = ({ isWide }) => {
         }}
       >
         <SkillsSlide />
-        {isWide && <Earth />}
       </SwiperSlide>
     </Swiper>
   );

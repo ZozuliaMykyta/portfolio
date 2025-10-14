@@ -11,7 +11,7 @@ const Info: React.FC = () => {
         opened
           ? "bottom-[120px] sm:bottom-[180px] lg:bottom-[240px] xl:bottom-[160px]"
           : "bottom-[160px] sm:bottom-[190px] lg:bottom-[240px] xl:bottom-[220px]"
-      } z-50 cursor-pointer px-4 sm:px-0`}
+      } z-[50] cursor-pointer px-4 sm:px-0`}
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: 0.5 }}

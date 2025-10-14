@@ -4,6 +4,8 @@ import EnterIndicator from "./components/EnterIndicator";
 import ScrollIndicator from "./components/ScrollIndicator";
 import ContactButton from "./components/contact/ContactButton";
 import { useEffect, useState } from "react";
+import Earth from "./components/Earth";
+// import Info from "./components/info/Info";
 
 function App() {
   const [isWide, setIsWide] = useState<boolean>(true);
@@ -23,10 +25,12 @@ function App() {
 
   return (
     <div className="relative overflow-hidden">
-      <SlideShow isWide={isWide} />
+      <SlideShow />
       {isWide && <EnterIndicator />}
       <ScrollIndicator />
       <ContactButton />
+      {/* <Info /> */}
+      {/* {isWide && <Earth />} */}
     </div>
   );
 }

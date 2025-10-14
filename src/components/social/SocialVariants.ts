@@ -29,23 +29,29 @@ export const iconVariants = {
   },
   hover: {
     scale: 1.2,
-    rotate: 360,
+    rotate: [0, -10, 10, 0],
+    y: -5,
+    filter: "drop-shadow(0 0 20px rgba(236, 72, 153, 0.8))",
     transition: {
-      duration: 0.3,
-      ease: [0.68, -0.55, 0.265, 1.55] as const,
+      duration: 0.4,
+      ease: "easeInOut" as const,
+      rotate: {
+        duration: 0.6,
+        ease: "easeInOut" as const,
+      },
     },
   },
 };
 
 export const glowVariants = {
-  initial: { scale: 1, opacity: 0.3 },
+  initial: { scale: 1, opacity: 0.2 },
   animate: {
-    scale: [1, 1.1, 1],
-    opacity: [0.3, 0.5, 0.3],
+    scale: [1, 1.2, 1],
+    opacity: [0.2, 0.6, 0.2],
     transition: {
-      duration: 3,
+      duration: 2.5,
       repeat: Infinity,
-      ease: [0.45, 0, 0.55, 1] as const,
+      ease: "easeInOut" as const,
     },
   },
 };

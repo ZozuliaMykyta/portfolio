@@ -1,10 +1,6 @@
 import React from "react";
 import { motion } from "motion/react";
-import {
-  containerVariants,
-  iconVariants,
-  glowVariants,
-} from "./SocialVariants";
+import { containerVariants, glowVariants } from "./SocialVariants";
 
 type ISocialLinks = {
   Icon: React.ComponentType;
@@ -23,7 +19,7 @@ const SocialMobile: React.FC<{ socialLinks: ISocialLinks }> = ({
       animate="visible"
     >
       {socialLinks.map(({ Icon, href, label }, index) => (
-        <motion.div key={label} variants={iconVariants} className="relative">
+        <motion.div key={label} className="relative">
           <motion.div
             className="absolute inset-0 bg-custom-pink rounded-full blur-lg opacity-15"
             variants={glowVariants}
@@ -36,7 +32,6 @@ const SocialMobile: React.FC<{ socialLinks: ISocialLinks }> = ({
             href={href}
             target="_blank"
             aria-label={label}
-            variants={iconVariants}
             whileHover="hover"
             className="relative z-10 block"
           >
